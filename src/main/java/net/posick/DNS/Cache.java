@@ -301,7 +301,7 @@ public class Cache {
     }
   }
 
-  private synchronized void removeElement(net.posick.DNS.Name name, int type) {
+  synchronized void removeElement(net.posick.DNS.Name name, int type) {
     Object types = data.get(name);
     if (types == null) {
       return;
